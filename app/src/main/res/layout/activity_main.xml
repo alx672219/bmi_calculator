@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.pxxpbmicalc.myapplication.MainActivity"
+    android:orientation="vertical" >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#faf8e2">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <EditText
+                    android:id="@+id/height"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="HEIGHT"
+                    android:textColor="#073f16"
+                    android:backgroundTint="#000000"
+
+                    android:inputType="number" />
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:popupBackground="#faf8e2"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+                <EditText
+                    android:id="@+id/weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="WEIGHT"
+                    android:textColor="#073f16"
+
+                    android:inputType="number" />
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:popupBackground="#faf8e2"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#faf8e2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <Button
+                android:id="@+id/calculate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CALCULATE"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#faf8e2"
+                android:textColor="#073f16"
+                android:textSize="25dp"/>
+            <TextView
+                android:id="@+id/bmi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:textColor="#29de9c"
+                android:textSize="25dp"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/bmigraph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/normal"
+            android:layout_margin="55dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="3"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BMI RANGE"
+                android:textColor="#F82060"
+                android:layout_weight="1"
+                android:textSize="33dp"/>
+            <TextView
+                android:id="@+id/result1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UNDERWEIGHT           0~18.4"
+                android:textColor="#6d539a"
+                android:layout_weight="1"
+                android:textSize="31dp" />
+            <TextView
+                android:id="@+id/result2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NORMAL                 18.5~24.9"
+                android:textColor="#6d539a"
+                android:layout_weight="1"
+                android:textSize="31dp"/>
+            <TextView
+                android:id="@+id/result3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OVERWEIGHT            25~29.9"
+                android:textColor="#6d539a"
+                android:layout_weight="1"
+                android:textSize="31dp"/>
+            <TextView
+                android:id="@+id/result4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OBESE                         30~34.9"
+                android:textColor="#6d539a"
+                android:layout_weight="1"
+                android:textSize="31dp"/>
+            <TextView
+                android:id="@+id/result5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EXTREMELY OBESE          35~"
+                android:textColor="#6d539a"
+                android:layout_weight="1"
+                android:textSize="31dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
