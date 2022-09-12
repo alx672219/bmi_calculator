@@ -1,4 +1,4 @@
-# BMI Calculator
+# BMI Calculator     2020/07 ~ 2020/08
 
 ## Main Functions
 1. Calculate body mass index using a person's height and weight.
